@@ -7,8 +7,7 @@
 					v-for="todo in todos"
 					v-bind:key="todo.id">
 				<span class="todo-list__item-name">{{ todo.title }}</span>
-				<span v-if="todo.completed" class="todo-list__item-status completed">Completed</span>
-				<span v-else class="todo-list__item-status">Not completed</span>
+				<span v-bind:class="[todo.completed ? 'completed' : '']" class="todo-list__item-status">{{ todo.completed ? 'completed' : 'Not completed' }}</span>
 			</li>
 		</ul>
 		<div v-else>{{ status }}</div>
@@ -66,7 +65,7 @@ export default {
 	.todo-list__item-status{
 		font-weight: bold;
 		display: inline-block;
-		font-size: 14px;
+		font-size: 12px;
 		border-radius: 4px;
 		background: #dc3545;
 		line-height: 21px;
