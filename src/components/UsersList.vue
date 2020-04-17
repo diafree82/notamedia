@@ -4,9 +4,9 @@
 			<table class="users-table">
 				<thead class="users-table__head">
 					<tr>
-						<th>Имя</th>
+						<th>Name</th>
 						<th>Email</th>
-						<th>Телефон</th>
+						<th>Phone</th>
 					</tr>
 				</thead>
 				<router-link class="users-table__item" 
