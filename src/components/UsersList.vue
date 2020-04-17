@@ -48,9 +48,6 @@ export default {
 			this.getUsersList();
 		}
 	},
-	created() {
-		this.getUsersList();
-	},
 	methods: {
 		getUsersList(){
 			fetch(`https://jsonplaceholder.typicode.com/users?_page=${this.page}&_limit=${this.inPage}`)
