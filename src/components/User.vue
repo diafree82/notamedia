@@ -57,9 +57,15 @@ export default {
 		line-height: 26px;
 	}
 	.todo-list__item{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-    align-items: center;
-    justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 		margin: 0 0 5px;
 	}
 	.todo-list__item-status{

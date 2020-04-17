@@ -86,6 +86,8 @@ export default {
 	}
 	.users-table__item{
 		cursor: pointer;
+		-webkit-transition: background ease .3s;
+		-o-transition: background ease .3s;
 		transition: background ease .3s;
 	}
 	.users-table__item:nth-child(odd){
