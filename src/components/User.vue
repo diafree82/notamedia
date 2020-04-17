@@ -7,7 +7,7 @@
 					v-for="todo in todos"
 					v-bind:key="todo.id">
 				<span class="todo-list__item-name">{{ todo.title }}</span>
-				<span v-bind:class="[todo.completed ? 'completed' : '']" class="todo-list__item-status">{{ todo.completed ? 'completed' : 'Not completed' }}</span>
+				<span v-bind:class="[todo.completed ? 'completed' : '']" class="todo-list__item-status">{{ todo.completed ? 'Completed' : 'Not completed' }}</span>
 			</li>
 		</ul>
 		<div v-else>{{ status }}</div>
