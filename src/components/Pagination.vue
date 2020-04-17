@@ -17,26 +17,8 @@
 		<router-link
 			v-if="currentPage != allPages"
 			tag="a"
-			:to="{name: 'Index', params: {page: currentPage ? currentPage + 1 : 2}}">
+			:to="{name: 'Index', params: {page: currentPage ? Number(currentPage) + 1 : 2}}">
 			Next ></router-link>
-
-		<!-- <a
-			v-if="currentPage > 1"
-			@click="getPage($event, null, 'prev')"
-		class="pagination__button"
-		href="#">< Back</a>
-		<a
-			v-for="(page, index) in allPages"
-			v-bind:key="++index"
-			@click="getPage($event, index)"
-			v-bind:class="[ currentPage == index ? curentClass : '' ]"
-
-		href="#">{{ index }}</a>
-		<a
-			v-if="currentPage != allPages"
-			@click="getPage($event, null, 'next')"
-		class="pagination__button"
-		href="#">Forward ></a> -->
 
 	</div>
 </template>
